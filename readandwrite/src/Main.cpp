@@ -5,10 +5,12 @@
 namespace Lib 
 {
 	template <typename T>
+	//Template print function
 	void Print(T t) 
 	{
 		std::cout << t << "\n";
 	}
+	//Writes to textfile
 	void WriteToFile(std::string filePath) 
 	{
 		std::ofstream file(filePath);
@@ -25,5 +27,5 @@ namespace Lib
 int Main() 
 {
 	Lib::Print(1);
-	Lib::WriteToFile(lib::filePath1);
+	Lib::WriteToFile(Lib::filePath1);
 }
